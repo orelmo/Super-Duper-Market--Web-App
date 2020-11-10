@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Financial Balance</title>
+    <script src="../../Common/jquery-2.0.3.min.js"></script>
+    <script src="FinancialPage.js"></script>
+    <link rel="stylesheet" href="../../Common/bootstrap.min.css">
+    <script src="../../Common/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="FinancialPage.css">
+    <link rel="stylesheet" href="../../Common/CommonStyle.css">
+
+</head>
+<body>
+    <div id="alertPlace">
+        <div id="fetchTransactionsError">
+
+        </div>
+    </div>
+    <h2 style="text-align: center">Financial Balance</h2>
+    <div class="container-fluid">
+        <div class="row first-row justify-content-between" id="balanceRow">
+            <div class="col ">
+                <label>Current Balance: </label>
+                <label id="balanceLabel">0</label>
+            </div>
+            <div class="col " id="depositDiv">
+                <label>Amount to Deposit: </label>
+                <input id="depositAmount" type="number" /><br>
+                <div id="depositAmountErrorDiv"></div>
+                <label>Deposit Date: </label>
+                <input id="depositDate" type="date"/><br>
+                <div id="depositDateErrorDiv"></div>
+                <input type="button" value="deposit" class="btn btn-light" onclick="submitNewDeposit()"/>
+            </div>
+        </div>
+    </div>
+
+    <h4 style="text-align: center">Transactions</h4>
+    <div class="container-fluid">
+        <div class="row table-row">
+            <div class="col bold">
+                Action
+            </div>
+            <div class="col bold">
+                Date
+            </div>
+            <div class="col bold">
+                Amount
+            </div>
+            <div class="col bold">
+                PreBalance
+            </div>
+            <div class="col bold">
+                PostBalance
+            </div>
+        </div>
+        <div id="transactions">
+
+        </div>
+    </div>
+    <div align="center" style="margin-top: 10px">
+        <button onclick="{window.close();}" type="button" class="btn btn-light">Close</button>
+    </div>
+</body>
+</html>

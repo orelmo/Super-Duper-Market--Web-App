@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Order Page</title>
+    <script src="../../Common/jquery-2.0.3.min.js"></script>
+    <script src="../../Common/bootstrap.bundle.min.js"></script>
+    <script src="OrderPage.js"></script>
+    <link rel="stylesheet" href="../../Common/bootstrap.min.css">
+    <script src="../../Common/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="OrderPage.css">
+    <script src="../../Common/BlockUI.js"></script>
+    <link rel="stylesheet" href="../../Common/CommonStyle.css">
+</head>
+<body onfocus="tryUnblockUI()"  onclick="tryUnblockUI()">
+    <div id="alertPlace">
+        <div id="zonesStoresAlert">
+
+        </div>
+
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <a role="button" class="btn btn-light" aria-pressed="true" href="../StoresPage/StoresPage.html" >Back</a>
+            </div>
+            <div class="col">
+                <h2 align="center">Order Page</h2>
+            </div>
+            <div class="col-2">
+
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="row  justify-content-center">
+            <div class="col " align="center">
+                <div class="btn-group">
+                    <button id="orderTypeDropdown" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Order Type
+                    </button>
+                    <div id="orderType" class="dropdown-menu">
+                        <a class="dropdown-item" href="#" onclick="onStaticOrderSelected()">Static Order</a>
+                        <a class="dropdown-item" href="#" onclick="onDynamicOrderSelected()">Dynamic Order</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col " align="center">
+                <div class="btn-group">
+                    <button id="storesComboBox" type="button" class="btn btn-secondary dropdown-toggle invisible" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Select Store
+                    </button>
+                    <div id="stores" class="dropdown-menu">
+
+                    </div>
+                </div>
+            </div>
+            <div class="col " align="center">
+                <label>X coordinate: </label> <input width="10" id="Xcoord" min="1" max="50" onkeyup="onCoordTyped(event)" onchange="onCoordChanged()" type="number"/><br>
+                <label>Y coordinate: </label> <input width="10" id="Ycoord" min="1" max="50" onkeyup="onCoordTyped(event)" onchange="onCoordChanged()" type="number"/>
+            </div>
+            <div class="col " align="center">
+                <input id="arrivalDate"  onchange="updateSubmitButtonDisability()" type="date"/>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid ">
+        <div class="row ">
+            <div class="col ">
+                <div class="container-fluid" id="items-table">
+                    <div class="row ">
+                        <div class="col ">
+                            <br><h4 align="center">Items</h4>
+                        </div>
+                    </div>
+                    <div id="itemsTable">
+
+                    </div>
+                    <div class="row  justify-content-center">
+                        <div class="col " align="center">
+                            <input id="submitButton" type="button" class="btn btn-outline-light" value="Submit" onclick="onSubmitPressed()" disabled/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="suppliers">
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

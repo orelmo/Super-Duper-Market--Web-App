@@ -1,0 +1,22 @@
+.table-row{
+    height: 30px;
+    border-top: 1px solid grey;
+}
+
+.first-row{
+    height: 120px;
+    border-top: 1px solid grey;
+}
+
+.error-row{
+    height: 150px;
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+.errorMessage{
+    background: lightcoral;
+    color: darkred;
+}

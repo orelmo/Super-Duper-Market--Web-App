@@ -1,0 +1,19 @@
+#Xcoord{
+    width: 50px;
+}
+
+#Ycoord{
+    width: 50px;
+}
+
+.amountArea{
+    width: 100px;
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+#items-table{
+    min-width: 550px;
+}

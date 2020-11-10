@@ -1,0 +1,28 @@
+#locationError{
+    color: darkred;
+    background-color: lightcoral;
+}
+
+.price{
+    width: 70px;
+}
+
+.smallCol{
+    width: 20px;
+}
+
+.regularCol{
+    width: 40px;
+}
+
+.bigCol{
+    width: 75px;
+}
+
+.row{
+    border-top: 1px solid grey;
+}
+
+#detailsContainer{
+    min-width: 700px;
+}

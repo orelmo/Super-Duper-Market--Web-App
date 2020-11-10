@@ -1,0 +1,11 @@
+.invisible{
+    visibility: hidden;
+}
+
+.last-row{
+    margin-bottom: 10px;
+}
+
+.item-row{
+    min-height: 30px;
+}

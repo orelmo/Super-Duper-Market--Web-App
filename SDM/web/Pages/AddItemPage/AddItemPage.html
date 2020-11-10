@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Item Page</title>
+    <script src="../../Common/jquery-2.0.3.min.js"></script>
+    <script src="../../Common/bootstrap.bundle.min.js"></script>
+    <script src="AddItemPage.js"></script>
+    <link rel="stylesheet" href="../../Common/bootstrap.min.css">
+    <script src="../../Common/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="AddItemPage.css">
+    <script src="../../Common/BlockUI.js"></script>
+    <link rel="stylesheet" href="../../Common/CommonStyle.css">
+</head>
+<body>
+    <div id="alertPlace">
+
+    </div>
+    <h2 align="center">Add Item Page</h2>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col" align="center">
+                <label>Item Name: </label>
+                <input type="text" id="itemName" onkeyup="checkSubmitButtonDisability()">
+            </div>
+            <div class="col" align="center">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Purchase Category
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#" onclick="onQuantityClicked()">Quantity</a>
+                        <a class="dropdown-item" href="#" onclick="onWeightClicked()">Weight</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col" align="center">
+                <label>Item Price: </label>
+                <input id='price' onkeyup='onPriceTyped(event)' type='number' min="1">
+            </div>
+        </div>
+        <h4 align="center">Select Stores</h4>
+        <div id="stores">
+
+        </div>
+    </div>
+    <div align="center">
+        <button disabled id="submitButton" class="btn btn-outline-light" onclick="onSubmitButtonClicked()">Submit</button>
+    </div>
+</body>
+</html>

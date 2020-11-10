@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Stores Page</title>
+    <script src="../../Common/jquery-2.0.3.min.js"></script>
+    <script src="StoresPage.js"></script>
+    <script src="../../Common/bootstrap.min.js"></script>
+    <script src="../../Common/BlockUI.js"></script>
+    <link rel="stylesheet" href="StoresPage.css">
+    <link rel="stylesheet" href="../../Common/bootstrap.min.css">
+    <link rel="stylesheet" href="../../Common/CommonStyle.css">
+</head>
+<body onclick="tryUnblockUI()" onfocus="tryUnblockUI()">
+    <div id="alertPlace">
+        <div id="zoneStoresErrorAlert">
+
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="row ">
+            <div class="col-2 ">
+                <a role="button" class="btn btn-light" aria-pressed="true" href="../ZonesPage/ZonesPage.html">Back</a>
+            </div>
+            <div class="col-8 ">
+                <h2 style="text-align: center">Stores Page</h2>
+            </div>
+            <div class="col ">
+                <a role="button" class="btn btn-light" aria-pressed="true" href="StoresPage.html">Refresh Stores</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid ">
+        <div class="row ">
+            <div class="col ">
+                <h4 style="text-align: center">Zone Items</h4>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col bold">ID</div>
+            <div class="col bold">Name</div>
+            <div class="col bold">Category</div>
+            <div class="col bold">Stores Selling the Item</div>
+            <div class="col bold">Average Price</div>
+            <div class="col bold">Units Sold</div>
+        </div>
+
+        <div id="itemsTable">
+
+        </div>
+    </div>
+
+    <br/>
+    <h4 style="text-align: center">Zone Stores</h4>
+
+    <div id="storesAccordion">
+        <div id="storesCards">
+
+        </div>
+    </div>
+    <br/>
+
+    <div id="customerMenu">
+        <div class="container-fluid ">
+            <div class="row justify-content-center">
+                <div class="col-2 " align="center">
+                    <button type="button" class="btn btn-outline-light" onclick="makeOrder()">Make Order</button>
+                </div>
+                <div class="col-2 "  align="center">
+                    <button type="button" class="btn btn-outline-light" onclick="showOrderHistory()">Order History</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="sellerMenu">
+        <div class="container-fluid ">
+            <div class="row justify-content-center last-row">
+                <div class="col-2" align="center">
+                    <button type="button" class="btn btn-outline-light" onclick="showFeedbacks()">Show Feedbacks</button>
+                </div>
+                <div class="col-2" align="center">
+                    <button type="button" class="btn btn-outline-light" onclick="addStore()">Add Store</button>
+                </div>
+                <div class="col-2" align="center">
+                    <button id="addItemButton" type="button" class="btn btn-outline-light" onclick="addItem()">Add Item</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

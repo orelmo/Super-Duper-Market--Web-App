@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="../../Common/jquery-2.0.3.min.js"></script>
+    <script src="../../Common/bootstrap.bundle.min.js"></script>
+    <script src="OrderSummaryPage.js"></script>
+    <link rel="stylesheet" href="../../Common/bootstrap.min.css">
+    <script src="../../Common/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="OrderSummaryPage.css">
+    <link rel="stylesheet" href="../../Common/CommonStyle.css">
+
+    <meta charset="UTF-8">
+    <title>Order Summary</title>
+</head>
+<body>
+    <div id="alertPlace">
+
+    </div>
+    <h2 align="center">Order Summary</h2>
+    <div id="storesAccordion">
+
+    </div>
+
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col ">
+                <label>Items Price: </label><label class="spaced" id="itemsPriceLabel"/>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col ">
+                <label>Delivery Price:  </label><label class="spaced" id="deliveryPriceLabel"/>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col ">
+                <label>Total Price:  </label><label class="spaced" id="totalPriceLabel"/>
+            </div>
+        </div>
+        <div class="row  justify-content-center">
+            <div class="col-2 " align="center">
+                <input type="button" class="btn btn-outline-light" value="OK" onclick="onOKClicked()"/>
+            </div>
+            <div class="col-2 " align="center">
+                <input type="button" class="btn btn-outline-light" value="Cancel" onclick="onCancelClicked()"/>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

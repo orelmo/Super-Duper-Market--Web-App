@@ -1,0 +1,19 @@
+.row{
+    border-bottom: 1px solid grey;
+}
+
+.col{
+    border-right: 1px solid grey;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.container-fluid{
+    min-width: max-content;
+}
+
+.alert{
+    margin: auto;
+}

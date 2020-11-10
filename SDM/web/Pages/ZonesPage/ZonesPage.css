@@ -1,0 +1,24 @@
+#header{
+    text-align: center;
+}
+
+.table-row{
+    height: 50px;
+}
+
+.alert{
+    margin: auto;
+}
+
+.big-row{
+    height: 200px;
+}
+
+.invisible{
+    visibility: hidden;
+}
+
+#chatSpace{
+    max-height: 100%;
+    max-width: 100%;
+}

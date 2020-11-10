@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="../../Common/bootstrap.min.css">
+    <link rel="stylesheet" href="ZonesPage.css">
+    <script src="../../Common/jquery-2.0.3.min.js"></script>
+    <script src="../../Common/bootstrap.min.js"></script>
+    <script src="ZonesPage.js"></script>
+    <link rel="stylesheet" href="../../Common/CommonStyle.css">
+
+    <meta charset="UTF-8">
+    <title>Stores</title>
+</head>
+<body>
+    <div id="alertPlace">
+        <div id="zoneErrorPlace">
+
+        </div>
+        <div id="onlineUsersErrorPlace">
+
+        </div>
+        <div id="notificationsErrorPlace">
+
+        </div>
+        <div id="chatErrorPlace">
+
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row justify-content-center ">
+            <div class="col ">
+               <h1 id="header"> Super Duper Market</h1>
+            </div>
+        </div>
+        <div class="row justify-content-between">
+            <div class="col-2 ">
+                <h4>Online Users</h4>
+            </div>
+            <div class="col-2 ">
+                <input type="button" class="btn btn-light" value="Financial Balance" onClick= "openTransactionsWindow()"/>
+            </div>
+            <div class="col-3 " id="XMLButton">
+                <div class="input-group">
+                    <div class="custom-file">
+                        <form id="fileForm">
+                            <input type="file" accept=".xml" onchange="checkFileType(event)" class="custom-file-input" id="inputGroupFile01"
+                                   aria-describedby="inputGroupFileAddon01" name="filePath">
+                        </form>
+                        <label class="custom-file-label" for="inputGroupFile01" name="filePath" id="filePath">Choose file</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-2 " >
+                <div class="row  big-row">
+                    <div class="col ">
+                        <ul id="onlineUsers">
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="row  ">
+                    <div class="col ">
+                        <h4>chat</h4>
+                    </div>
+                </div>
+                <div class="row big-row">
+                    <div class="col overflow-auto" id="chatSpace">
+
+                    </div>
+                </div>
+                <div class="row" style="border-right: 1px solid gray">
+                    <div class="col">
+                        <textarea onkeyup="checkSendButtonDisability()" class="form-control" id="messageArea" rows="1"></textarea>
+                    </div>
+                    <div class="col-4">
+                        <button disabled id="sendButton" class="btn btn-outline-light" onclick="sendChatMessage()">Send</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row  table-row">
+                    <div class="col bold">Owner</div>
+                    <div class="col bold">Zone</div>
+                    <div class="col bold">Number of Items </div>
+                    <div class="col bold">Number of Stores</div>
+                    <div class="col bold">Number of Orders</div>
+                    <div class="col bold">Orders Average Price</div>
+                </div>
+                <div id="zonesTable">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

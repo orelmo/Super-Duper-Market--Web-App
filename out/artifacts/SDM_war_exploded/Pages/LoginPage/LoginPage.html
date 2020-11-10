@@ -1,0 +1,35 @@
+<html class="invisible">
+  <head>
+      <script src="../../Common/jquery-2.0.3.min.js"></script>
+      <link rel="stylesheet" href="../../Common/bootstrap.min.css">
+      <script src="../../Common/bootstrap.min.js"></script>
+      <script src="LoginPage.js"></script>
+      <link rel="stylesheet" href="../../Common/CommonStyle.css">
+
+      <title>Super Duper Market</title>
+  </head>
+  <body>
+      <div id="alertPlace">
+
+      </div>
+     <div class="headLine">
+        <h1 align="center">Welcome To Super Duper Market</h1>
+      </div>
+      <div>
+        <form style="margin-left: 20px" action="login" id="loginForm">
+          <h4>User Type:</h4>
+          <input id="customerRadio" type="radio" name="userType" value="Customer" class="userType"/>
+          <label onclick="onCustomerClicked()">Customer</label><br/>
+          <input id="sellerRadio" type="radio" name="userType" value="Seller" class="userType"/>
+          <label onclick="onSellerClicked()">Seller</label><br/><br/>
+          <h4>User Name:</h4>
+          <input type="text" name="username" id="userName"/>
+          <input type="submit" name="submitButton" class="btn btn-light" value="Submit"/>
+            <br/>
+            <div id="errorPanel">
+                <label id="errorMessage"></label>
+            </div>
+        </form>
+      </div>
+  </body>
+</html>

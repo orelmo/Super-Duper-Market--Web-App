@@ -1,0 +1,11 @@
+.invisible{
+    visibility: hidden;
+}
+
+input{
+    width: 70px;
+}
+
+.spaced{
+    margin: 7px;
+}

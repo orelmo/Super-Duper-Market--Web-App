@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="../../Common/jquery-2.0.3.min.js"></script>
+    <script src="../../Common/bootstrap.bundle.min.js"></script>
+    <script src="AddStorePage.js"></script>
+    <link rel="stylesheet" href="../../Common/bootstrap.min.css">
+    <script src="../../Common/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="AddStorePage.css">
+    <link rel="stylesheet" href="../../Common/CommonStyle.css">
+
+    <title>Add Store</title>
+</head>
+<body>
+    <div id="alertPlace">
+
+    </div>
+    <h2 align="center">Add Store</h2>
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col ">
+                <p>Store Name:</p>
+                <input id="storeName" type="text" onchange="checkOKButtonDisability()">
+            </div>
+            <div class="col ">
+                <label>X coordinate: </label> <input width="10px" id="Xcoord" type="number" min="1" max="50" onkeyup="onCoordTyped(event)" onchange="checkOKButtonDisability()"/><br>
+                <label>Y coordinate: </label> <input width="10px" id="Ycoord" type="number" min="1" max="50" onkeyup="onCoordTyped(event)" onchange="checkOKButtonDisability()"/>
+                <label id="locationError"></label>
+            </div>
+            <div class="col ">
+                <label>PPK: </label> <input width="10" id="PPK" type="number" min="0" onkeyup="onPPKTyped(event)" onchange="checkOKButtonDisability()"/>
+            </div>
+        </div>
+    </div>
+    <h4 align="center">Item to Choose</h4>
+    <div id="detailsContainer" class="container-fluid">
+        <div class="row">
+            <div class="col smallCol ">ID</div>
+            <div class="col regularCol ">Name</div>
+            <div class="col regularCol ">Category</div>
+            <div class="col regularCol ">Stores Selling the Item</div>
+            <div class="col regularCol ">Average Price</div>
+            <div class="col regularCol ">Units Sold</div>
+            <div class="col bigCol ">Price</div>
+            <div class="col smallCol ">Choose Item</div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="row  justify-content-center">
+            <div class="col-2 " align="center">
+                <input disabled id="OKButton" type="button" class="btn btn-outline-light" value="OK" onclick="onOKClicked()"/>
+            </div>
+            <div class="col-2 " align="center">
+                <input type="button" value="Cancel" class="btn btn-outline-light" onclick={window.close();}>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

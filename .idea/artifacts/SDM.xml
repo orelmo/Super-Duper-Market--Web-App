@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="SDM">
+    <output-path>$PROJECT_DIR$/out/artifacts/SDM</output-path>
+    <root id="archive" name="SDM.war">
+      <element id="artifact" artifact-name="SDM:war exploded" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib" />
+      </element>
+    </root>
+  </artifact>
+</component>
